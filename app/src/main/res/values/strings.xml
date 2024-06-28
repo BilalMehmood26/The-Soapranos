@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">The Soapranos</string>
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="content_policy"><u>Content Policy</u></string>
+    <string name="by_continuing_you_agree_to_our">By continuing, you agree to our</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="login_to_the_soapranos">Login to The Soapranos</string>
+    <string name="sign_in_account">Sign in Account</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_with_apple_or_google">Sign in with Google</string>
+    <string name="google">Google</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_address">Email address</string>
+    <string name="full_name">Full name</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="search_here">Search here</string>
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".auth.signup.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_back"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/main_logo"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="@string/create_an_account"
+            android:textColor="@color/blue_dark"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/full_name_et"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:hint="@string/full_name"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_11ssp"
+            android:background="@drawable/edit_text_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:hint="@string/email_address"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_11ssp"
+            android:background="@drawable/edit_text_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name_et" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:hint="@string/phone_number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_11ssp"
+            android:background="@drawable/edit_text_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_et" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Password"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_et" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_password"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/password_et"
+            app:layout_constraintEnd_toEndOf="@+id/password_et"
+            app:layout_constraintTop_toTopOf="@+id/password_et" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_account_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:backgroundTint="@color/blue_dark"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_17sdp"
+            app:cornerRadius="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/password_et"
+            app:layout_constraintStart_toStartOf="@+id/password_et"
+            app:layout_constraintTop_toBottomOf="@+id/password_et" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/sign_in_with_apple_or_google"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/create_account_btn"
+            app:layout_constraintStart_toStartOf="@+id/create_account_btn"
+            app:layout_constraintTop_toBottomOf="@+id/create_account_btn" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/orange_border"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+        <View
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/orange_border"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/google_account_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="@string/google"
+            app:strokeColor="@color/orange_border"
+            app:strokeWidth="@dimen/_1sdp"
+            android:textColor="@color/grey_dark"
+            app:icon="@drawable/ic_google"
+            app:iconTint="@null"
+            app:iconGravity="textStart"
+            app:cornerRadius="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@+id/password_et"
+            app:layout_constraintStart_toStartOf="@+id/password_et"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <TextView
+            android:id="@+id/upper_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/by_continuing_you_agree_to_our"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/google_account_btn"
+            app:layout_constraintStart_toStartOf="@+id/google_account_btn"
+            app:layout_constraintTop_toBottomOf="@+id/google_account_btn" />
+
+        <TextView
+            android:id="@+id/terms_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/terms_of_service"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toStartOf="@+id/dash_lb"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/privacy_lb" />
+
+        <TextView
+            android:id="@+id/dash_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="-"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/terms_lb"
+            app:layout_constraintEnd_toStartOf="@+id/privacy_lb"
+            app:layout_constraintStart_toEndOf="@+id/terms_lb"
+            app:layout_constraintTop_toTopOf="@+id/terms_lb" />
+
+        <TextView
+            android:id="@+id/privacy_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/grey_dark"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toStartOf="@+id/second_dash_lb"
+            app:layout_constraintStart_toEndOf="@+id/dash_lb"
+            app:layout_constraintTop_toBottomOf="@+id/upper_lb" />
+
+        <TextView
+            android:id="@+id/second_dash_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="-"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/content_lb"
+            app:layout_constraintStart_toEndOf="@+id/privacy_lb" />
+
+        <TextView
+            android:id="@+id/content_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/content_policy"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/second_dash_lb"
+            app:layout_constraintTop_toTopOf="@+id/privacy_lb" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
